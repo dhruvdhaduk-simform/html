@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <title>Attributes in HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    </head>
+    <body>
+        
+        <!-- Case insensitive attributes -->
+        <input type="text">
+        <input type="tExT">
+
+        <!-- Case sensitive attributes -->
+        <div id="myId"></div>
+        <div id="myID"></div>
+    
+        <!-- All these three are same. 'required' attribute is 'true' in all three. -->
+        <input required>
+        <input required="">
+        <input required="required">
+        <!-- Omit the 'required' attribute to make it 'false' -->
+        
+        <!-- Here, 'required' attribute is boolean and 'type' attribute is enumerated. -->
+        <input type="text" required>
+
+        <!-- 'id' attribute (Case sensitive) -->
+        <div id="😀"></div>
+        <div id=".class"></div>
+        <!-- Should not use ids like above. -->
+
+
+        <div tabindex="0">
+            This div will recieve focus from Tab.
+        </div>
+
+
+        <!-- 'role' attribute -->
+        <div role="comboboxes"></div>
+        <div role="menubars"></div>
+        <div role="tablists"></div>
+        <div role="treegrids"></div>
+
+        <!-- 'contenteditable' attribute -->
+        <div contenteditable="true">
+            This content is editable.
+        </div>
+
+        <!-- 'data-___' attribute -->
+        <div
+            data-first-name="Dhruv"
+            data-last-name="Dhaduk"
+        >
+            Dhruv Dhaduk
+        </div>
+        
+    </body>
+</html>
